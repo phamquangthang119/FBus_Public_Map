@@ -1,0 +1,142 @@
+#map-container {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+#routeTable {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 350px;
+}
+/* 
+#routeTable h2 {
+  margin: 0;
+} */
+.fa-search {
+  font-size: 24px;
+}
+#sethPhatMap {
+  /* position: absolute;
+  width: 100%;
+  height: 100%;
+  flex: 1; */
+  flex: 1;
+  height: 100%;
+}
+
+.toggle-btn {
+  /* position: absolute;
+  top: 50%;
+  right: 0; Thay đổi left thành right */
+  /* transform: translateY(-50%);
+  width: 20px;
+  height: 100px;
+  background-color: gray;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; */
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 1;
+}
+.toggle-btn i {
+  color: #000;
+}
+
+.toggle-btn:hover {
+  background-color: lightgray;
+}
+
+.toggle-btn.collapsed {
+  left: -20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search-container h2 {
+  margin-right: 10px;
+  color: blue;
+}
+
+.search-container .search-content {
+  display: flex;
+  align-items: center;
+}
+
+.search-container .search-content i {
+  margin-right: 5px;
+}
+
+.route {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px dashed gray;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.route-item {
+  flex: 0 0 50%;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  border: 1px solid lightgreen;
+  bottom: 10px;
+  background-color: lightgray;
+   flex-grow: 1;
+   align-items: center;
+   justify-content: center;
+   font-size: 25px;
+}
+
+.route-item i {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.route-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.route-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.route-img {
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Adjust the height as needed */
+  margin-right: 10px; /* Adjust the margin as needed */
+  vertical-align: middle;
+}
+
+header {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #008cff;
+}
+header.img {
+  width: 400px;
+}
